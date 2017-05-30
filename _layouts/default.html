@@ -17,13 +17,39 @@
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#F8E81C">
 
-    <!--styles-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400">
+    <!--above the fold, critical css-->
+    <style>
+        body {
+            background-color: #F8E81C;
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: 400;
+            color: #000;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        p {
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
 
 {{ content }}
+
+<!--styles-->
+<link rel="stylesheet" href="style.css">
+{% include css/fonts.html %}
+
+<!--analytics-->
 {% include google-analytics.html %}
+
 </body>
 </html>
