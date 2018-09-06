@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.svg">
+    <img src="https://res.cloudinary.com/sixth/image/upload/v1536217979/sixth.svg">
     <h1>SIXTH &middot; FRONTEND UDVIKLING</h1>
     <h2>CVR 38418998</h2>
   </div>
