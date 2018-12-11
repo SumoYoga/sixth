@@ -1,20 +1,10 @@
-import React, { Component } from 'react'
-import Markdown from 'react-markdown'
-import logo from './assets/sixth.svg'
+import React from 'react'
+import { Route } from 'react-router-dom'
 import './styles/App.scss'
-import md from './markdown/index'
+import Index from './components/Index'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Markdown source={md} />
-        </header>
-      </div>
-    )
-  }
+const App = () => {
+  return <Route path="/" exact component={Index} />
 }
 
 export default App
