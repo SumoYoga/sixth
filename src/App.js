@@ -1,10 +1,15 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
-import './styles/App.scss'
-import Index from './components/Index'
+import { Route, Switch } from 'react-router-dom'
+import Index from './components/Home'
+import NoMatch from './components/NoMatch'
 
 const App = () => {
-  return <Route path="/" exact component={Index} />
+  return (
+    <Switch>
+      <Route path="/" exact component={Index} />
+      <Route component={NoMatch} />
+    </Switch>
+  )
 }
 
 export default App
