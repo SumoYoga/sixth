@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import Markdown from 'react-markdown'
 import logo from './assets/sixth.svg'
 import './styles/App.scss'
+
+const input = `
+# SIXTH &middot; FRONTEND UDVIKLING
+
+CVR 38418998
+`
 
 class App extends Component {
   render() {
@@ -8,8 +15,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>SIXTH &middot; FRONTEND UDVIKLING</h1>
-          <h2>CVR 38418998</h2>
+          <Markdown source={input} />
         </header>
       </div>
     )
