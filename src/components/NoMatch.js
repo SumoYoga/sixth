@@ -1,7 +1,8 @@
 import React from 'react'
 import Markdown from 'react-markdown'
-import logo from '../assets/sixth.svg'
-import '../styles/Home.scss'
+import Background from './Background'
+import catGlasses from '../assets/cat-glasses.jpg'
+import '../styles/NoMatch.scss'
 
 const md = `
 # 404
@@ -9,9 +10,9 @@ const md = `
 
 const Index = () => {
   return (
-    <div className="Home">
+    <div className="NoMatch">
+      <Background bg={catGlasses} />
       <header className="header">
-        <img src={logo} className="logo" alt="logo" />
         <Markdown source={md} />
       </header>
     </div>
