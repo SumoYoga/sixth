@@ -1,17 +1,17 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import Background from './Background'
-import catGlasses from '../assets/cat-glasses.jpg'
+import prez from '../assets/president-roll-eyes.gif'
 import '../styles/NoMatch.scss'
 
 const md = `
-# 404
+There is nothing here ...
 `
 
 const Index = () => {
   return (
     <div className="NoMatch">
-      <Background bg={catGlasses} />
+      <Background bg={prez} />
       <header className="header">
         <Markdown source={md} />
       </header>
