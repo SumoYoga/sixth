@@ -1,5 +1,7 @@
 .Home {
-  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #f8e81c;
 
   .logo {
     height: 30vmin;
