@@ -1,7 +1,6 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import logo from '../assets/sixth.svg'
-import '../styles/Home.scss'
 import Background from './Background'
 
 const md = `
