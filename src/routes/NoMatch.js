@@ -1,6 +1,6 @@
 import React from 'react'
 import Markdown from 'react-markdown'
-import Background from './Background'
+import Background from '../components/Background'
 import prez from '../assets/president-roll-eyes.gif'
 import '../styles/NoMatch.scss'
 

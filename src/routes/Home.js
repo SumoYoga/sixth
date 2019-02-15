@@ -1,7 +1,8 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import logo from '../assets/sixth.svg'
-import Background from './Background'
+import Background from '../components/Background'
+import '../styles/app.scss'
 
 const md = `
 # SIXTH &middot; FRONTEND UDVIKLING

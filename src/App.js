@@ -1,17 +1,21 @@
-import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import Index from './components/Home'
-import CV from './components/CV'
-import NoMatch from './components/NoMatch'
-import './styles/app.scss'
+import React, { Suspense, lazy } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './routes/Home'
+import NoMatch from './routes/NoMatch'
+
+const CV = lazy(() => import('./routes/CV'))
 
 const App = () => {
   return (
-    <Switch>
-      <Route path="/cv" component={CV} />
-      <Route path="/" exact component={Index} />
-      <Route component={NoMatch} />
-    </Switch>
+    <Router>
+      <Suspense fallback={<div />}>
+        <Switch>
+          <Route path="/cv" component={CV} />
+          <Route path="/" exact component={Home} />
+          <Route component={NoMatch} />
+        </Switch>
+      </Suspense>
+    </Router>
   )
 }
 
