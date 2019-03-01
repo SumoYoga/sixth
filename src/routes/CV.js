@@ -1,6 +1,9 @@
 import React from 'react'
+import Section from '../components/Section'
+
 import Markdown from 'react-markdown'
 import '../styles/cv.scss'
+import catTyping from '../assets/cv.png'
 
 const md = `
 # CV
@@ -129,10 +132,79 @@ MLP has worked primarily with the following technologies:
 
 `
 
+const contactDetails = `
+# Michael Lothar Petersen
+## Frontend Developer
+Address: Rundforbiparken 6B st tv, 2850 Nærum, Denmark<br>
+Contact Number: [+45 51 84 85 84](tel:+51848584)<br>
+Email Address: [hello@sixth.dk](mailto:hello@sixth.dk)
+`
+
+const professionalSummary = `
+## Professional summary
+Frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+
+Lorem ipsum frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+Lorem ipsum frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+`
+
+const educationalBackground = `
+## Educational background
+Frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+`
+
+const careerObjective = `
+## Career objective
+To become a reliable network engineer who will be 
+able to assist the company or organization towards
+achieving its missions & goals.
+`
+
+const employmentExperience = `
+## Employment experience
+### Aruba Networks
+MLP is a Senior Frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+
+### Lorem Aruba Networks
+MLP is a Senior Frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+
+Lorem ipsum MLP is a Senior Frontend Developer with strong related competences in frontend development, architecture, setup, best practices, GUI/E2E test and optimization.
+
+`
+
 const Index = () => {
   return (
-    <div className="CV">
-      <Markdown source={md} />
+    //   { /*<div className="CV">*/ }
+    // {/*<CvSection source={employmentExperience} />*/
+    // }
+    // {/*<Markdown source={md} />*/
+    // }
+    // {/*</div>*/
+    // }
+
+    <div>
+      <div
+        className="Background"
+        style={{ backgroundImage: `url(${catTyping})` }}
+      />
+
+      <div className="container">
+        <div className="row">
+          <div className="column column-42 test-left">
+            <div className="portrait" />
+
+            <Section source={professionalSummary} />
+            <Section source={educationalBackground} />
+          </div>
+          <div className="column test-right">
+            <Section source={contactDetails} />
+            <div className="separator" />
+
+            <Section source={careerObjective} />
+            <Section source={employmentExperience} />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
