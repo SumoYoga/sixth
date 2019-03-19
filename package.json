@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretty": "pretty-quick",
-    "deploy": "echo DEPLOYING..."
+    "deploy": "react-scripts build && cp build/index.html build/404.html ; echo DEPLOYING... ; node scripts/ftpupload.js"
   },
   "eslintConfig": {
     "extends": "react-app"
