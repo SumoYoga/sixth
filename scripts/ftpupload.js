@@ -7,7 +7,7 @@ var config = {
     host: process.env.ftp_host,
     port: process.env.ftp_port,
     localRoot: __dirname + '/build',
-    remoteRoot: '/www/',
+    remoteRoot: '/run/www/',
     // include: ['*', '**/*'],      // this would upload everything except dot files
     include: ['build/*'],
     exclude: ['build/**/*.map'],     // e.g. exclude sourcemaps - ** exclude: [] if nothing to exclude **
