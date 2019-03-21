@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import logo from '../assets/sixth-circle.svg'
 import '../styles/Home.scss'
 
-const md = `hello@sixth.dk`
+const md = `hello@sixth.dk x`
 
 const Index = () => {
   return (
