@@ -6,16 +6,15 @@ var config = {
   password: process.env.ftp_password,
   host: process.env.ftp_host,
   port: process.env.ftp_port,
-  localRoot: __dirname + '/build',
-  remoteRoot: '/www',
+  // localRoot: __dirname + '/build',
+  localRoot: __dirname + '',
+  remoteRoot: '/run/www',
   // include: ['*', '**/*'],      // this would upload everything except dot files
-  include: ['build/*'],
+  include: ['build/*', '*', '**/*'],
   exclude: ['build/**/*.map'], // e.g. exclude sourcemaps - ** exclude: [] if nothing to exclude **
   deleteRemote: false, // delete ALL existing files at destination before uploading, if true
   forcePasv: true, // Passive mode is forced (EPSV command is not sent)
 }
-
-console.log(__dirname)
 
 // use with promises
 ftpDeploy
