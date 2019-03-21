@@ -1,5 +1,6 @@
 {
   "name": "sixth",
+  "homepage": "https://sixth.dk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretty": "pretty-quick",
-    "deploy": "echo BUILDING... ; react-scripts build && cp build/index.html build/404.html ; echo DEPLOYING... ; node scripts/ftpupload.js"
+    "deploy": "echo BUILDING... ; react-scripts build && cp build/index.html build/404.html ; echo DEPLOYING... ; node scripts/deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"

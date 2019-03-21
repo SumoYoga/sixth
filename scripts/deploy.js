@@ -1,32 +1,34 @@
-var FtpDeploy = require('ftp-deploy');
-var ftpDeploy = new FtpDeploy();
- 
+var FtpDeploy = require('ftp-deploy')
+var ftpDeploy = new FtpDeploy()
+
 var config = {
-    user: process.env.ftp_user,
-    password: process.env.ftp_password,
-    host: process.env.ftp_host,
-    port: process.env.ftp_port,
-    localRoot: __dirname + '/build',
-    remoteRoot: '/run/www/',
-    // include: ['*', '**/*'],      // this would upload everything except dot files
-    include: ['build/*'],
-    exclude: ['build/**/*.map'],     // e.g. exclude sourcemaps - ** exclude: [] if nothing to exclude **
-    deleteRemote: true,              // delete ALL existing files at destination before uploading, if true
-    forcePasv: true                 // Passive mode is forced (EPSV command is not sent)
+  user: process.env.ftp_user,
+  password: process.env.ftp_password,
+  host: process.env.ftp_host,
+  port: process.env.ftp_port,
+  localRoot: __dirname + '/build',
+  remoteRoot: '/run/www/',
+  // include: ['*', '**/*'],      // this would upload everything except dot files
+  include: ['*'],
+  exclude: ['build/**/*.map'], // e.g. exclude sourcemaps - ** exclude: [] if nothing to exclude **
+  deleteRemote: true, // delete ALL existing files at destination before uploading, if true
+  forcePasv: true, // Passive mode is forced (EPSV command is not sent)
 }
- 
+
+console.log(__dirname)
+console.log(pwd)
+
 // use with promises
-ftpDeploy.deploy(config)
-    .then(res => console.log('finished:', res))
-    .catch(err => console.log(err))
-    
+ftpDeploy
+  .deploy(config)
+  .then(res => console.log('finished:', res))
+  .catch(err => console.log(err))
+
 // use with callback
 ftpDeploy.deploy(config, function(err, res) {
-    if (err) console.log(err)
-    else console.log('finished:', res);
-});
-
-
+  if (err) console.log(err)
+  else console.log('finished:', res)
+})
 
 /*
 var fs = require('fs');
