@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretty": "pretty-quick",
-    "deploy": "echo BUILDING... ; react-scripts build && cp build/index.html build/404.html ; echo DEPLOYING... ; node scripts/deploy.js"
+    "deploy": "echo BUILDING... ; react-scripts build && cp build/index.html build/404.html ; echo DEPLOYING... ; node deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"
