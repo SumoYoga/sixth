@@ -16,7 +16,6 @@ var config = {
 }
 
 console.log(__dirname)
-console.log(pwd)
 
 // use with promises
 ftpDeploy
