@@ -1,12 +1,14 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Index from './components/Home'
+import Home from './components/Home'
+import Contact from './components/Contact'
 import NoMatch from './components/NoMatch'
 
 const App = () => {
   return (
     <Switch>
-      <Route path="/" exact component={Index} />
+      <Route path="/" exact component={Home} />
+      <Route path="/contact" component={Contact} />
       <Route component={NoMatch} />
     </Switch>
   )
