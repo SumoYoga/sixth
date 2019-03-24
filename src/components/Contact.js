@@ -9,8 +9,8 @@ const Index = () => {
   return (
     <div className="Home">
       <header className="header">
-        <Link to="/">
-          <img src={logo} className="logo" alt="logo" />
+        <Link to="/" className="logo">
+          <img src={logo} alt="logo" />
         </Link>
         <Markdown source={md} />
       </header>
