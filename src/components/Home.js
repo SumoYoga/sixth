@@ -5,7 +5,7 @@ import logo from '../assets/sixth-circle.svg'
 
 const md = `Sixth`
 
-const Index = () => {
+const Home = () => {
   return (
     <div className="Home">
       <header className="header">
@@ -18,4 +18,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Home
