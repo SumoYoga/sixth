@@ -7,14 +7,14 @@ const md = `hello@sixth.dk`
 
 const Index = () => {
   return (
-    <div className="Home">
-      <header className="header">
+    <main className="Home">
+      <section className="header">
         <Link to="/" className="logo">
           <img src={logo} alt="logo" />
         </Link>
         <Markdown source={md} />
-      </header>
-    </div>
+      </section>
+    </main>
   )
 }
 

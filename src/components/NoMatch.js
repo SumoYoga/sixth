@@ -9,12 +9,12 @@ There is nothing here ...
 
 const Index = () => {
   return (
-    <div className="NoMatch">
+    <main className="NoMatch">
       <Background bg={prez} />
-      <header className="header">
+      <section className="header">
         <Markdown source={md} />
-      </header>
-    </div>
+      </section>
+    </main>
   )
 }
 

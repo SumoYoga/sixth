@@ -7,14 +7,14 @@ const md = `Sixth`
 
 const Home = () => {
   return (
-    <div className="Home">
-      <header className="header">
+    <main className="Home">
+      <section className="header">
         <Link to="/contact" className="logo">
           <img src={logo} alt="logo" />
         </Link>
         <Markdown source={md} />
-      </header>
-    </div>
+      </section>
+    </main>
   )
 }
 
