@@ -5,7 +5,7 @@ import logo from '../assets/sixth-circle.svg'
 
 const md = `hello@sixth.dk`
 
-const Index = () => {
+const Contact = () => {
   return (
     <main className="Home">
       <section className="header">
@@ -18,4 +18,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Contact
