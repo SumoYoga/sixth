@@ -8,8 +8,8 @@ const md = `hello@sixth.dk`
 const Index = () => {
   return (
     <main className="Home">
-      <section className="header">
-        <Link to="/" className="logo">
+      <section className="header flex flex-col items-center justify-center">
+        <Link to="/" className="logo mb-4">
           <img src={logo} alt="logo" />
         </Link>
         <Markdown source={md} />

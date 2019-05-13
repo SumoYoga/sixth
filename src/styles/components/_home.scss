@@ -1,12 +1,5 @@
 .Home {
-  position: relative;
-  z-index: 1;
-  background-color: white;
-  color: #000;
-
   .logo {
-    margin-bottom: 1rem;
-
     img {
       min-height: 200px;
       height: 25vmin;
@@ -15,10 +8,6 @@
 
   .header {
     min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 130%;
     font-weight: 500;
     line-height: 1.4;
