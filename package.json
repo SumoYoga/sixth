@@ -33,6 +33,7 @@
   "devDependencies": {
     "ftp-deploy": "^2.3.3",
     "husky": "^2.7.0",
+    "markdown-with-front-matter-loader": "^0.1.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1"
   },
