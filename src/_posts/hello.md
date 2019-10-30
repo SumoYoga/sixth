@@ -1,5 +1,6 @@
 ---
 title: 'Hello'
+keywords: ['JS', 'CSS']
 ---
 
 # Hey Hello
