@@ -16,6 +16,7 @@ const Home = () => (
 
     <div className="container">
       <img src="/sixth.svg" alt="Sixth" />
+      <h1>Sixth</h1>
     </div>
 
     <style jsx>{`
@@ -34,16 +35,23 @@ const Home = () => (
         background: #F4F8FB;
         width: 100%;
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        padding: 20px;
+        padding: 50px 20px;
         border-radius: 25px;
         height: calc(100vh - 40px);
       }
 
       img {
         height: 150px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.6em;
       }
     `}</style>
   </div>
