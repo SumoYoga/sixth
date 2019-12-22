@@ -7,60 +7,110 @@ const Home = () => (
   <div>
     <Head>
       <title>Sixth</title>
-      <link rel="icon" href="/favicon.ico"/>
+      <link rel="icon" href="/favicon.ico" />
       <meta name="theme-color" content="#F8E81C"></meta>
-      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"></meta>
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,shrink-to-fit=no"
+      ></meta>
     </Head>
 
-    <div className="container">
-      <img src="/sixth.svg" alt="Sixth"/>
-      <h1>Sixth</h1>
+    <div className="intro">
+      <section className="hero" id="hero">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="is-spaced title is-1">Sixth</h1>
+            <h2 className="subtitle is-3">
+              A small Copenhagen-based team of front-end developers.
+            </h2>
+
+            <div className="content">
+              <div className="social columns is-mobile">
+                <div className="column">
+                  <a href="https://www.linkedin.com/company/sixth">
+                    <figure className="image is-48x48">
+                      <img src="/linkedin.svg" />
+                    </figure>
+                  </a>
+                </div>
+                <div className="column">
+                  <a href="https://github.com/HelloSixth">
+                    <figure className="image is-48x48">
+                      <img src="/github.svg" />
+                    </figure>
+                  </a>
+                </div>
+                <div className="column">
+                  <a href="mailto:hello@sixth.dk">
+                    <figure className="image is-48x48">
+                      <img src="/mail.svg" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-
-    <h1 className="title">
-      Sixth
-    </h1>
-
-    <p className="subtitle">
-      Modern CSS framework based
-      on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-    </p>
-
 
     <style jsx>{`
       :global(*) {
         box-sizing: border-box;
       }
-      //:global(body) {
-      //  margin: 0;
-      //  padding: 20px;
-      //  height: 100%;
-      //  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-      //    Helvetica, sans-serif;
-      //}
 
-      //.container {
-      //  background: #F4F8FB;
-      //  width: 100%;
-      //  display: flex;
-      //  flex-direction: column;
-      //  padding: 50px 20px;
-      //  border-radius: 25px;
-      //  height: calc(100vh - 40px);
-      //}
-
-      img {
-        height: 150px;
-        margin-bottom: 20px;
+      :global(body) {
+        letter-spacing: -0.03rem;
       }
 
-      h1 {
-        //font-size: 21px;
-        //font-weight: 400;
-        //text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.6em;
+      .hero {
+        align-items: center;
+      }
+
+      .image svg {
+        fill: white;
+        stroke: white;
+        color: white;
+      }
+
+      .column {
+        padding-left: 0;
+        padding-right: 0;
+        flex: 0;
+      }
+
+      .social {
+        justify-content: center;
+        margin: 3rem 0;
+      }
+
+      .social .column figure {
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+      }
+
+      .image img {
+        fill: white;
+      }
+
+      .intro {
+        margin-top: 3rem;
+        text-align: center;
+      }
+
+      .title {
+        font-weight: 700;
+      }
+
+      .subtitle {
+        max-width: 500px;
+        font-weight: 600;
+      }
+
+      @media screen and (max-width: 576px) {
+        .subtitle {
+          font-size: 1.4rem !important;
+        }
       }
     `}</style>
   </div>
