@@ -10,7 +10,7 @@
 // $beige-light: #D0D1CD;
 // $beige-lighter: #EFF0EB;
 // $sky-light: #F4F8FB;
-$company-bg: black;
+// $company-bg: white;
 
 // Update Bulma's global variables
 $family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Avenir Next,
@@ -23,9 +23,9 @@ $family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Avenir Next,
 // $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $company-bg;
-$title-color: white;
-$text: #9EA1B8;
+// $body-background-color: $company-bg;
+$title-color: #222;
+// $text: #9EA1B8;
 
 // Import only what you need from Bulma
 @import '../node_modules/bulma/bulma.sass';
